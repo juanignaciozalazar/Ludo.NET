@@ -53,6 +53,12 @@
     <Compile Include="FormJuego.Designer.cs">
       <DependentUpon>FormJuego.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLudo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLudo.Designer.cs">
+      <DependentUpon>FormLudo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Juego.cs" />
     <Compile Include="ContenedorFichas.cs" />
     <Compile Include="Ficha.cs" />
@@ -73,6 +79,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormInicio.resx">
       <DependentUpon>FormInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLudo.resx">
+      <DependentUpon>FormLudo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
