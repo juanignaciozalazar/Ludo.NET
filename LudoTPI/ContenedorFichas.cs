@@ -6,14 +6,18 @@ using System.Threading.Tasks;
 
 namespace LudoTPI
 {
-    internal abstract class ContenedorFichas
+    internal class ContenedorFichas
     {
-        private int CantFichas;
+        public List<Ficha> Fichas { get; set; }
 
-        public Ficha[] Fichas
+        private ContenedorFichas(int CantFichas)
         {
-            get { return fichas; }
-            set { fichas = value; }
+
+        }
+
+        public ContenedorFichas CreateContenedorFichasJugador(int IdJugador)
+        {
+            return new ContenedorFichas(IdJugador);
         }
 
     }

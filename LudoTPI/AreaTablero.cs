@@ -9,12 +9,23 @@ namespace LudoTPI
     internal class AreaTablero
     {
         public int ID { get; set; }
-        public Ficha[] ArrayFichas;
+        public Ficha[] ArrayFichas { get; set; }
+        public AreaTablero()
+        {
+            ArrayFichas = new Ficha[18];
+        } 
 
+        public bool ContieneFicha(int posicion)
+        {
+            if (ArrayFichas[posicion] == null)
+            {
+                return false;
+            } else
+            {
+                return true;
+            }
+        }
 
-
-
-
-
+            
     }
 }

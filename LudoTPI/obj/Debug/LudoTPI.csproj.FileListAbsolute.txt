@@ -1,0 +1,12 @@
+C:\Users\Avril\source\repos\Ludo.NET\LudoTPI\bin\Debug\LudoTPI.exe.config
+C:\Users\Avril\source\repos\Ludo.NET\LudoTPI\bin\Debug\LudoTPI.exe
+C:\Users\Avril\source\repos\Ludo.NET\LudoTPI\bin\Debug\LudoTPI.pdb
+C:\Users\Avril\source\repos\Ludo.NET\LudoTPI\obj\Debug\LudoTPI.csproj.AssemblyReference.cache
+C:\Users\Avril\source\repos\Ludo.NET\LudoTPI\obj\Debug\LudoTPI.csproj.SuggestedBindingRedirects.cache
+C:\Users\Avril\source\repos\Ludo.NET\LudoTPI\obj\Debug\LudoTPI.FormJuego.resources
+C:\Users\Avril\source\repos\Ludo.NET\LudoTPI\obj\Debug\LudoTPI.FormInicio.resources
+C:\Users\Avril\source\repos\Ludo.NET\LudoTPI\obj\Debug\LudoTPI.Properties.Resources.resources
+C:\Users\Avril\source\repos\Ludo.NET\LudoTPI\obj\Debug\LudoTPI.csproj.GenerateResource.cache
+C:\Users\Avril\source\repos\Ludo.NET\LudoTPI\obj\Debug\LudoTPI.csproj.CoreCompileInputs.cache
+C:\Users\Avril\source\repos\Ludo.NET\LudoTPI\obj\Debug\LudoTPI.exe
+C:\Users\Avril\source\repos\Ludo.NET\LudoTPI\obj\Debug\LudoTPI.pdb

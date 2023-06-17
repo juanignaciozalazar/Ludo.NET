@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace LudoTPI
 {
-    public partial class Form1 : Form
+    public partial class FormInicio : Form
     {
-        public Form1()
+        private FormJuego FormJuegoInstance;
+        public FormInicio()
         {
             InitializeComponent();
+        }
+
+        private void b_Jugar_Click(object sender, EventArgs e)
+        {
+            this.FormJuegoInstance = FormJuego.GetInstance();
+            this.FormJuegoInstance.Show();
         }
     }
 }

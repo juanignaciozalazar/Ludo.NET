@@ -10,31 +10,23 @@ namespace LudoTPI
     internal class Ficha
     {
         // Atributos
-        public bool EnJuego;
-        public int IdJugador;
-        public int IdArea;
-        public int PosArea;
-        public Ficha(int idJugador)
+        public int IdJugador { get; }
+        public int IdArea { get; set; }
+        public int PosArea { get; set; } 
+
+        // Constructores
+        public Ficha(int IdJugador)
         {
-            IdArea = idJugador;
-            PosArea = Constantes.POS_ENTRADA;
+            this.IdJugador = IdJugador;
+            this.IdArea = IdJugador;
+            this.PosArea = Constantes.POS_ENTRADA;
         }
 
-        public void Mover()
-        {
+        // Métodos
 
-        }
-
-        public bool EnJuego
+        public void Mover(int NuevaPosicion)
         {
-            get
-            {
-                return enJuego;
-            }
-            set
-            {
-                enJuego = value;
-            }
+            PosArea = NuevaPosicion;
         }
     }
 }

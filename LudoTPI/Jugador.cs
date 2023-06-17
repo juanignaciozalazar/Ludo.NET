@@ -9,5 +9,10 @@ namespace LudoTPI
     internal class Jugador
     {
         public int ID { get; set; }
+
+        public Jugador(int ID)
+        {
+            this.ID = ID;
+        }
     }
 }
