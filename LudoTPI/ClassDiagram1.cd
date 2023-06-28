@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LudoTPI.AreaTablero">
+    <Position X="13.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAACAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>AreaTablero.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ArrayFichas" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="LudoTPI.Constantes" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AICAAAAAAAQAAAAAABAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Constantes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LudoTPI.ContenedorFichas">
+    <Position X="11.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAQAAA=</HashCode>
+      <FileName>ContenedorFichas.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Fichas" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="LudoTPI.DadoClass">
+    <Position X="8.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAABAABAEAAAAA=</HashCode>
+      <FileName>DadoClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LudoTPI.Ficha">
+    <Position X="16.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAABAAAAAAAAAAIAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ficha.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LudoTPI.FormInicio">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEACAkAAAQAACAAAACAAAAwAgAAAAAAACAAAA=</HashCode>
+      <FileName>FormInicio.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_form_ludo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LudoTPI.FormLudo" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgQACAAAQAAAAGABAACgAAAAAAAgEAAERBAACA=</HashCode>
+      <FileName>FormLudo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="juego" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LudoTPI.Juego">
+    <Position X="7.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAEAAAgAAACAAAAhABBAAAAACAAAA=</HashCode>
+      <FileName>Juego.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="tablero" />
+      <Property Name="Dado" />
+      <Property Name="Jugadores" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LudoTPI.Jugador">
+    <Position X="7.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Jugador.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="contenedorFichas" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LudoTPI.Program">
+    <Position X="0.5" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LudoTPI.Tablero">
+    <Position X="10.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAiAAAAAAAAAgAAAAAgAAAAAA=</HashCode>
+      <FileName>Tablero.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="contenedorFinal" />
+      <Property Name="AreasTablero" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LudoTPI.Properties.Resources" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAABEAAAASAAAAAAAAABAAAAAIQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="LudoTPI.ColorById" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAEAAQQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tablero.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

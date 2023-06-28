@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Image 1" xml:space="preserve">
-    <value />
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="LudoBackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1096,5 +1093,45 @@
         JEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmS
         JEmSJEmSJEmSJEk6o6ur/wd2BsX7y7A3ZwAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="Image 1" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Ludo_board_trimmed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Ludo_board_trimmed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ludo_board_trimmed_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Ludo_board_trimmed_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ficha_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Ficha_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ficha_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Ficha_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ficha_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Ficha_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ficha_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Ficha_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dado_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Dado_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dado_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Dado_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dado_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Dado_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dado_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Dado_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dado_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Dado_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dado_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Dado_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -10,15 +10,17 @@ namespace LudoTPI
 
     enum ColorById
     {
-        Rojo,
-        Verde,
-        Azul,
-        Amarillo
+        G,
+        R,
+        B,
+        Y,
     }
     internal class Tablero
     {
         public AreaTablero[] AreasTablero { get;  }      //Contiene las 4 areas del tablero
         private int numeroSacado;
+        public ContenedorFichas contenedorFinal;
+
         public bool ContieneFicha(int idArea, int posicion)
         {
             return AreasTablero[idArea].ContieneFicha(posicion) ? true : false;

@@ -15,11 +15,11 @@ namespace LudoTPI
         public int PosArea { get; set; } 
 
         // Constructores
-        public Ficha(int IdJugador)
+        public Ficha(int IdJugador) 
         {
             this.IdJugador = IdJugador;
             this.IdArea = IdJugador;
-            this.PosArea = Constantes.POS_ENTRADA;
+            this.PosArea = -1;
         }
 
         // Métodos

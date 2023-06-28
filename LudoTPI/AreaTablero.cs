@@ -10,6 +10,8 @@ namespace LudoTPI
     {
         public int ID { get; set; }
         public Ficha[] ArrayFichas { get; set; }
+        
+
         public AreaTablero()
         {
             ArrayFichas = new Ficha[18];

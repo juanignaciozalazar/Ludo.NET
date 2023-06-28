@@ -8,17 +8,15 @@ namespace LudoTPI
 {
     internal class ContenedorFichas
     {
-        public List<Ficha> Fichas { get; set; }
+        public Ficha[] Fichas { get; set; }
 
-        private ContenedorFichas(int CantFichas)
+        public ContenedorFichas(int CantFichas, int IdJugador)
         {
-
-        }
-
-        public ContenedorFichas CreateContenedorFichasJugador(int IdJugador)
-        {
-            return new ContenedorFichas(IdJugador);
-        }
-
+            this.Fichas = new Ficha[4];
+            for (int i = 0; i < CantFichas; i++)
+            {
+                Fichas[i] = new Ficha(IdJugador);
+            }
+        }        
     }
 }

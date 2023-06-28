@@ -1,26 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing.Design;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace LudoTPI
 {
+
+
     internal class Juego
     {
         
         // Atributos
-        private Tablero tablero;
+        public Tablero Tablero;
         public int NumeroSacado { get; set; }
         public DadoClass Dado { get; set; }
         public Jugador[] Jugadores { get; set; }
 
         public Jugador ProximoJugador;
+        public int CantJugadores { get; set; }
+        private EstadoJuego estadoJuego { get; set; }
 
         //Constructores
-        public Juego(int CantJugadores) {
+        public Juego(EstadoJuego estadoJuego, int CantJugadores) {
+            this.CantJugadores = CantJugadores;
+            this.Jugadores = new Jugador[this.CantJugadores];
             this.Dado = new DadoClass();
             for (int i = 0; i < CantJugadores; i++)
             {
@@ -33,10 +41,10 @@ namespace LudoTPI
             NumeroSacado = Dado.Tirar();
         }
 
-        public int CalcularProxMovimiento(Ficha ficha, int numeroSacado, out int idArea)
+        public int CalcularProxMovimiento(Ficha ficha, out int idArea)
         {
             idArea = ficha.IdArea;
-            int proxPos = ficha.PosArea + numeroSacado;
+            int proxPos = ficha.PosArea + NumeroSacado;
             if (ficha.IdArea == ficha.IdJugador)
             {
                 if (ficha.PosArea <= Constantes.POS_SALTO_FINAL)    // Si la ficha ya esta en el tramo final
@@ -61,7 +69,7 @@ namespace LudoTPI
         public void MoverFicha(Ficha ficha)
         {
             int proxIdArea;
-            int proxPosArea = CalcularProxMovimiento(ficha, NumeroSacado, out proxIdArea);
+            int proxPosArea = CalcularProxMovimiento(ficha, out proxIdArea);
             if (PuedeComer(ficha, NumeroSacado) == true)
             {
                 ficha.IdArea = proxIdArea;
@@ -72,10 +80,26 @@ namespace LudoTPI
         public bool PuedeComer(Ficha ficha, int numeroSacado)
         {
             int idArea;
-            int proxMovimiento = CalcularProxMovimiento(ficha, numeroSacado, out idArea);
-            Ficha fichaDestino = this.tablero.AreasTablero[idArea].ArrayFichas[proxMovimiento];
+            int proxMovimiento = CalcularProxMovimiento(ficha, out idArea);
+            Ficha fichaDestino = this.Tablero.AreasTablero[idArea].ArrayFichas[proxMovimiento];
 
             return (fichaDestino == null) ? false : true;
+        }
+
+        private void inicializarAtributos()
+        {
+            this.Jugadores = new Jugador[this.CantJugadores];
+        }
+
+        public Ficha GetFicha(int idArea, int pos)
+        {
+            return this.Tablero.AreasTablero[idArea].ArrayFichas[pos];
+        }
+
+        public char GetColorJugadorActual()
+        {
+            var jugador = estadoJuego.JugadorActual;
+            return Enum.GetName(typeof(ColorById), jugador.ID)[0];
         }
     }
 }
